@@ -8,11 +8,9 @@
 # Site settings
 title: Hello, world!
 email: kkp7700@gmail.com
-description: Statistical softwares or literature reviews for statistical genetics # this means to ignore newlines until "baseurl:"
+description: 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://statpng.github.io/TopicInPythonWebCrawling" # the base hostname & protocol for your site
 author: Kipoong Kim
-
-links:
   
 theme: jekyll-theme-hacker
