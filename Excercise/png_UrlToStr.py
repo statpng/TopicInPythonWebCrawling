@@ -1,6 +1,6 @@
 def urlCharset(data1024):
     import re
-    encoding = re.search("charset=([\w\-\d]+)\"", str(data1024))
+    encoding = re.search(r"charset=([\w\-\d]+)\"", str(data1024))
 
     if encoding :
         encoding = encoding.group(1)
