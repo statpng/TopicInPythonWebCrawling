@@ -4,4 +4,4 @@
 
 [Day 2](./Day2.md)
 
-[Day 3](https://github.com/statpng/TopicInPythonWebCrawling/blob/master/Day3.py)
+[Day 3](https://github.com/statpng/TopicInPythonWebCrawling/blob/master/Excercise/Day3.py)
