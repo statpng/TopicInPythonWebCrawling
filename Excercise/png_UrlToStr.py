@@ -1,6 +1,6 @@
 def urlCharset(data1024):
     import re
-    encoding = re.search(r"charset=([\w\-\d]+)\"", str(data1024))
+    encoding = re.search("charset=([\w\-\d]+)\"", data1024)
 
     if encoding :
         encoding = encoding.group(1)
@@ -19,11 +19,9 @@ def png_urlopen(url):
     
     data = data.decode(encoding)
     print(data)
-    return data
 
 if __name__ == "__main__":
     from urllib.request import urlopen
     url = input("Enter the url that you want to get.")
-    res_urlopen = urlopen(url)
-    data = res_urlopen.read()
-    print(data)
+    dataStr = png_urlopen(url)
+    print(dataStr)
