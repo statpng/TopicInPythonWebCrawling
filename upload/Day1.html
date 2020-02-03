@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>겨울방학특강</title>
+
+        <style>
+            * {
+                margin: 0px;
+            }
+            header {
+                height: 150px; 
+                background-color: brown;
+                color: #fff;
+                text-align: center;
+                padding: 20px;
+                box-sizing:  border-box;
+            }
+            nav {
+                height: 100px;
+                box-sizing: border-box;
+                background-color: bisque;
+            }
+            .navli {
+                color: darkblue;
+                display: inline-block;
+                width: 100px;
+                height: 50px;
+                padding: 20px;
+                background-color: white;
+            }
+            
+            section{
+                margin: 10px;
+            }
+
+            footer{
+                margin: 20px;
+                text-align: center;
+            }
+
+            body > section > p:nth-child(1){
+                margin: 10px;
+            }
+            
+            /*
+            #m1{
+                color: red;
+            }
+            #m2{
+                color: green;
+            }
+            #m3{
+                color: blue;
+            }
+            */
+
+            section > ul > li {
+                color: purple;
+            }
+            
+            
+            section li { /* Select li under section only*/
+                color: purple;
+            }
+
+            section + li { /* Select li next to section only*/
+                color: purple;
+            }
+
+            section ~ li { /* Select all of li after section*/
+                color: purple;
+            }
+            
+            
+            /*
+            .navli, .secp{
+                color:  purple;
+            }
+            */
+            
+            /*
+            li[class], p[class="secp"]{
+                color: orange;
+            }
+            */
+
+            nav a {
+                text-decoration-line: overline;
+                padding-top: 0px;
+            }
+
+            nav a:link{
+                color: green;
+            }
+
+            nav a:visited{
+                color: blueviolet;
+            }
+
+            nav a:hover{
+                background-color: black;
+            }
+            nav a:hover{
+                color: white;
+                background-color: black;
+            }
+
+        </style>
+    </head>
+    <body>
+        <a href="https://htmlcheatsheet.com/" target="_top"> HTML cheatsheet </a>
+        
+        <embed src=https://gist.github.com/statpng/9a97d961f571e39ef58b6c6dc3d376c7.js hidden=false width=200 height=100></embed>
+        
+        </iframe> 
+
+        <form action="/action.php" method="post">
+            Name: <input name="name" type="text" /> <br /> 
+            Age: <input max="99" min="1" name="age" step="1" type="number" value="18" /> <br />
+            <select name="gender">
+                <option selected="selected" value="male">Male</option>
+                <option value="female">Female</option>
+            </select><br /> 
+            <input checked="checked" name="newsletter" type="radio" value="daily" /> Daily <input name="newsletter" type="radio" value="weekly" /> Weekly<br />
+            <textarea cols="20" name="comments" rows="5">Comment</textarea><br />
+            <label><input name="terms" type="checkbox" value="tandc" />Accept terms</label> <br />
+            <input type="submit" value="Submit" />
+        </form>
+        
+        <header>
+            <h1> 자유 소프트웨어(Free Software) </h1>
+        </header>
+
+        <nav>
+        
+        <ul>
+            <li class="navli"> <a href=#m1> 원칙1 </a> </li>
+            <li class="navli"> <a href=#m2> 원칙2 </a> </li>
+            <li class="navli"> <a href=#m3> 원칙3 </a> </li>
+        </ul>
+        
+        </nav>
+        
+        
+        <section>
+            <p class="secp"> 소프웨어의 소스가 공개되어 사용, 수정, 배포등에 <span style="text-decoration: underline;"> 제한이 없는 </span> 소프트웨어입니다. </p>
+            <p> 즉, 소스 코드가 공개되어 누구나 소프트웨어를 자유롭게 수정할 수 있고, 자유롭게 복제 및 배포가 가능한 소프트웨어입니다. <br />
+            자유 소프트웨어는 대부분 무료로 제공됨으로 무료로 제공되는 프리웨어와 혼동이 되지만 전혀 다른 개념입니다. </p>
+
+        <div id="demo" class="big" dir="ltr" lang="en" 
+            style="color: red;" tabindex="0" title="Tooltip" 
+            contenteditable="true" spellcheck="true" 
+            data-htmlcheat="99">
+        
+        <ul>
+            <li id="m1"> 소프트웨어의 작동 원리를 연구하고 이를 자신의 필요에 맞게 변경시킬 수 있는 자유 </li>
+            <li id="m2"> 소프트웨어를 이웃과 함께 공유하기 위해서 이를 복제하고 배포할 수 있는 자유 </li>
+            <li id="m3"> 소프트웨어를 향상시키고 이를 공동체 전체의 이익을 위해서 다신 환원시킬 수 있는 자유 </li>
+        </ul>
+
+        </section>
+
+        </div>
+        
+        <footer>
+            <a href="https://ko.wikipedia.org/wiki/GNU_%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/22/Heckert_GNU_white.svg/1024px-Heckert_GNU_white.svg.png", alt="GNU project" height=200, width=200>
+            </a>
+        </footer>
+       
+        
+        
+
+    </body>
+</html>
