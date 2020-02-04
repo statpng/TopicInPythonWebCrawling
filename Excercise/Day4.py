@@ -84,7 +84,7 @@ bs.select("#mArticle ul li .desc_boxthumb strong")
 bs.select("#mArticle ul li .desc_boxthumb dd")
 
 
-nrank = 10;
+nrank = 10
 bs.select("#mArticle ul li span")
 res_li = bs.select("#mArticle ul li .desc_boxthumb")
 for i in res_li[:nrank]:
@@ -154,4 +154,3 @@ minn_bars.to_excel("Best Bars in Minneapolis.xlsx", index=False)
 
 
 
-for( )

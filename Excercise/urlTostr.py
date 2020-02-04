@@ -17,7 +17,7 @@ def png_urlopen(url):
     data = res_urlopen.read()
     encoding = urlCharset(data[:1024].decode("ascii", errors="replace"))
     
-    data = data.decode(encoding)
+    data = data.decode(encoding, errors="ignore")
     print(data)
     return(data)
 
