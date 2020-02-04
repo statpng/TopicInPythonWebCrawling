@@ -1,4 +1,4 @@
-def FileToStr(filename):
+def fileTostr(filename):
     f = open(filename, "r", encoding="utf-8")
     data = f.read()
     f.close()

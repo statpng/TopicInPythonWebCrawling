@@ -86,9 +86,6 @@ bs.select("#mArticle ul li .desc_boxthumb dd")
 
 nrank = 10;
 bs.select("#mArticle ul li span")
-bs.select("#mArticle > ul > li:nth-child(1)")
-bs.select("#mArticle > ul")
-bs.select("#mArticle")
 res_li = bs.select("#mArticle ul li .desc_boxthumb")
 for i in res_li[:nrank]:
     print( i.find("strong").text.replace("\n", ""), "//", i.find("dd").text )
@@ -155,3 +152,6 @@ minn_bars.to_excel("Best Bars in Minneapolis.xlsx", index=False)
 
 
 
+
+
+for( )
