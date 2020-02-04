@@ -1,3 +1,9 @@
+# References
+if FALSE:
+    http://www.kobis.or.kr/kobisopenapi/homepg/apiservice/searchServiceInfo.do
+    https://www.weather.go.kr/weather/lifenindustry/sevice_rss.jsp?sido=2600000000&gugun=2641000000&dong=2641061000&x=19&y=18
+
+
 from fileTostr import fileTostr
 from datetime import datetime
 from urlTostr import png_urlopen
