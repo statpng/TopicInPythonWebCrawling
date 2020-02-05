@@ -116,12 +116,11 @@ Date_list = [StartDate_date + datetime.timedelta(days=x) for x in range(Diff_dat
 
 
 Date = Date_list[0]
-
 Out_daily = []
 for Date in Date_list:
     url = "http://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchDailyBoxOfficeList.xml?key=430156241533f1d058c603178cc3ca0e&targetDt=" + str(Date).replace("-", "")
     source = png_urlopen(url)
-    bs = BeautifulSoup(source, "lxml-xml")
+    bs = BeautifulSoup(source, "json")
     # bs = BeautifulSoup(source, "html.parser") # slower
     
     res_dayily = bs.select("dailyBoxOffice")
